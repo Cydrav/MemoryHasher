@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sha256">
+      <UniqueIdentifier>{67a63f4d-a1f3-4ac4-af1c-2df61c8c40ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hasher">
+      <UniqueIdentifier>{15c42d52-3196-434f-ae41-813f194734eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Hasher\ProgramSH.h">
+      <Filter>Hasher</Filter>
+    </ClInclude>
+    <ClInclude Include="Sha256\Sha256.h">
+      <Filter>Sha256</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Hasher\ProgramSH.cpp">
+      <Filter>Hasher</Filter>
+    </ClCompile>
+    <ClCompile Include="Sha256\Sha256.cpp">
+      <Filter>Sha256</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+</Project>
