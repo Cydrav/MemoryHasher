@@ -21,7 +21,7 @@ struct segmentInfo {
 	std::string lastHash;
 
 	segmentInfo(const char* name) {
-		strcpy(segmentName, name);
+		this->segmentName = name;
 	}
 };
 
