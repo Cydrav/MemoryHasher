@@ -30,7 +30,7 @@ segmentInfo* getSegmentInfo(PCHAR segmentName) { // Nawaz <3
 void chunkSegments(std::vector<segmentInfo*> segmentVector) {
 	for (int sz = 0; sz < Segments::segments-1; sz++) {
 		for (int i = segmentVector[sz]->segmentStart; i < segmentVector[sz]->segmentEnd; i++) {
-			if ((int)(*(char*)i) != -52 && (int)(*(char*)i)) {
+			if (-52 != (int)(*(char*)i) && (int)(*(char*)i)) {
 				segmentVector[sz]->goodHash += std::to_string((int)(*(char*)i)) + " ";
 			}
 		}
@@ -44,7 +44,7 @@ void compareMemory(std::vector<segmentInfo*> segmentVector) {
 	for (int sz = 0; sz < Segments::segments-1; sz++) {
 		segmentVector[sz]->lastHash = "";
 		for (int i = segmentVector[sz]->segmentStart; i < segmentVector[sz]->segmentEnd; i++) {
-			if ((int)(*(char*)i) != -52 && (int)(*(char*)i)) {
+			if (-52 != (int)(*(char*)i) && (int)(*(char*)i)) {
 				segmentVector[sz]->lastHash += std::to_string((int)(*(char*)i)) + " ";
 			}
 		}
